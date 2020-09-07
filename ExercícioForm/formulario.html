@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: lightgray;
+            
+        }
+
+        form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+        }
+              
+    </style>
+</head>
+<body>
+    
+        <form method="post" action="" name="form" id="formCadastro">
+            <h1>Cadastro de usuário</h1>
+    
+            <input type="text" name="tx_nome" id="nomeUsuario"  placeholder="Nome completo" size="52" > <br>
+            <input type="email" name="tx_email" id="emailUsuario" placeholder="Email" size="52" > <br>
+            <input type="tel" name="tx_tel" id="telUsuario" placeholder="Telefone" size="52" ><br>
+
+            <b>Data de nascimento</b>: <br>
+
+            <input type="date"  id="dataUsuario" required><br>
+            <input  name="submit" type="submit"  value="Registrar" onclick="registrar();">
+            <input  name="Reset" type="reset" value="Redefinir">
+        </form>
+   
+
+<script>
+var nomeCadastro = document.getElementById('nomeUsuario');
+function registrar() {
+    if (nomeCadastro.value.length == 0) {
+        open('404.html');
+    } else {
+        open('welcome.html');
+    }
+}
+</script>
+
+
+</body>
+</html>
