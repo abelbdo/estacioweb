@@ -7,20 +7,20 @@
 </head>
 <body>
     <h1 style="text-align: center;">Números pares de 0 a 100</h1>
-    <div id="pares">
+    <div id="pares" style="text-align: center; background-color: yellow;" >
     </div>
 <script>
-
+var par = [];
 function exibirPares(a1,a2){
     while(a1<=a2){
         if((a1%2)==0){
-            console.log(a1);
+            par.push(a1); 
         } 
         a1++
     }
 }
-var NumPares = exibirPares(0,100);
-document.getElementById('pares').innerHTML = NumPares;
+exibirPares(0,100);
+document.getElementById('pares').innerHTML = `${par} são PARES `;
 
 
 </script>
