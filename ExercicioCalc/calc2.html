@@ -30,7 +30,6 @@
     <h1>Calculadora</h1>
     <input type="number" name="textn1" id="txtn1" placeholder="Primeiro Valor"><br><br>
     <input type="number" name="textn2" id="txtn2" placeholder="Segundo Valor"><br><br>
-    <input type="reset" value="C"><br><br>
     <input type="button" value="+" onclick="somar()">
     <input type="button" value="-" onclick="subtrair()">
     <input type="button" value="x" onclick="multiplicar()">
@@ -40,36 +39,41 @@
 
 
     <script>
-
-        var valor1 = document.getElementById('txtn1');
-        var valor2 = document.getElementById('txtn2');
-        var resultado = window.document.getElementById('resultado');
-        var v1 = parseInt(valor1.value);
-        var v2 = parseInt(valor2.value);
-
-        function somar(v1, v2) {
-            return (v1 + v2);
+        var valor1 = 0;
+        var valor2 = 0;
+       
+       
+        function obterValor(){
+            valor1 = parseFloat(document.getElementById('txtn1').value);
+            valor2 = parseFloat(document.getElementById('txtn2').value);
         }
-        var soma = somar(v1,v2);
-        document.getElementById('resultado').innerHTML = soma;
 
-        function subtrair(v1, v2) {
-            return (v1 - v2);
+        function somar() {
+            obterValor();
+            var soma = valor1 + valor2;    
+            document.getElementById('resultado').innerHTML = `O resultado é ${soma}`; 
         }
-        var subt = subtrair(v1,v2)
-        document.getElementById('resultado').innerHTML = subt;
+            
+       
 
-        function multiplicar(v1, v2) {
-            return (v1 * v2);
+        function subtrair() {
+            obterValor();
+            var subtracao = valor1 - valor2;    
+            document.getElementById('resultado').innerHTML = `O resultado é ${subtracao}`;
         }
-        multiplicar(v1,v2);
-        document.getElementById('resultado').innerHTML = multiplicar();
 
-        function dividir(v1, v2) {
-            return (v1 / v2);
+        function multiplicar() {
+            obterValor();
+            var multiplicacao = valor1 * valor2;    
+            document.getElementById('resultado').innerHTML = `O resultado é ${multiplicacao}`;
         }
-        dividir(v1,v2);
-        document.getElementById('resultado').innerHTML = dividir();
+        
+
+        function dividir() {
+            obterValor();
+            var divisao = valor1 / valor2;    
+            document.getElementById('resultado').innerHTML = `O resultado é ${divisao}`;
+        }
 
     </script>
 </body>
