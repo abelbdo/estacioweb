@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        h1{
+            font-weight: 300;
+        }
+        body{
+            text-align: center;
+        }
+        input{
+            border: solid 1px;
+            text-align: center;
+        }
+        input[type = "number"]:focus{
+            width: 300px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <input type="number" name="textn1" id="txtn1" placeholder="Primeiro Valor"><br><br>
+    <input type="number" name="textn2" id="txtn2" placeholder="Segundo Valor"><br><br>
+    <label for="operacao">Selecione a operação:</label>
+    <select name="operacao" id="operacao" required>
+      <option value="adição">+</option>
+      <option value="subtração">-</option>
+      <option value="multiplicação">x</option>
+      <option value="divisão">/</option>
+    </select>
+    <input name="calcular" type="button" value="Calcular" onclick="calcular()"><br><br>
+    <div id="resultado" name="resultado">Resultado</div>
+
+
+    <script>
+ function calcular(){  
+    var valor1 = document.getElementById('txtn1');
+    var valor2 = document.getElementById('txtn2');
+    var operacao = window.document.getElementById('operacao');
+    var resultado = window.document.getElementById('resultado');
+    var v1 = Number(valor1.value);
+    var v2 = Number(valor2.value);
+
+    var operador = operacao.value;
+  if (operador == 'adição') {
+    var s = v1 + v2;
+  }
+  if (operador == 'subtração') {
+    var s = v1 - v2;
+  }
+  if (operador == 'multiplicação') {
+    var s = v1 * v2;
+  }
+  if (operador == 'divisão') {
+    var s = v1 / v2;
+  }
+
+
+  resultado.innerHTML = `A ${operador} entre ${v1} e ${v2} é igual a ${s}`
+}
+</script>
+</body>
+</html>
