@@ -1,0 +1,23 @@
+1. Considerando  o  conteúdo  abordado  ao  longo  deste  capítulo,  em  que  foram  discutidos  aspectos relacionados à evolução tecnológica da internet e os protocolos de comunica-ção, responda às seguintes questões:
+a) Quais os principais personagens responsáveis pela criação da Internet nas décadas de 60 e 70?
+b) Qual o primeiro navegador de internet?
+c) Quando a linguagem de marcação de hipertexto (HTML) foi criada?
+d) Qual a utilidade do protocolo HTTP no contexto da Internet?
+e) Apresente uma listagem dos principais navegadores web (browsers) disponíveis atu-almente.
+f) Sobre  correio  eletrônico,  explique  as  funcionalidades  dos  seguintes  protocolos:  SMTP, POP3 e IMAP.
+g) Qual protocolo é utilizado pelos serviços de correio eletrônico baseados na Internet, tais como Gmail, Yahoo Mail, entre outros?
+h) Considerando o Sistema de Nomes de Domínio, explique o processo de tradução de um nome de hosts em um endereço.
+
+REFLEXÃO 
+Neste capítulo, você aprendeu os fatos históricos e evolutivos da Internet, bem como as carac-terísticas e utilidades dos protocolos de comunicação. Neste contexto, faça uma análise crítica e reflexiva do seguinte questionamento: Nos dias atuais, como seria o processo de comunica-ção entre as pessoas se não existisse a Internet? Você pode imaginar?
+
+
+RESPOSTAS:
+A) A Agência de projetos de pesquisa avançada e de defesa (DARPA) e o engenheiro Lawrence G. Roberts.
+B) O Mosaic e em seguida o Netscape Navigator
+C) Na década de 90
+D) ele é o modelo de comunicação utilizado na internet para transferência de dados.
+E) Google Chrome, Mozilla Firefox, Opera, Safari, Microsoft Edge.
+F) IMAP e POP são protocolos padrão da Internet para recebimento de e-mail, que baixa as mensagens do servidor para a sua máquina, smartphone ou tablet. Já o SMTP é o protocolo para envio de e-mail.
+G) STML, IMAP POP3
+H) O DNS faz a tradução dos nomes de dominio para endereços IPS. É um facilitador, ao invés de termos de escrever um ip tal como xxx.xx.xxx.x escrevemos algo como www.site.com 

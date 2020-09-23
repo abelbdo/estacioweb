@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {
+            text-align: center;
+            align-content: center;
+        }
+
+        label {
+            border: 2px solid;
+            margin: 5px;
+        }
+
+        body {
+            background: linear-gradient(to top, #3B4371, #F3904F);
+        }
+
+        input {
+            margin: 5px;
+            text-align: center;
+            align-content: center;
+            border: solid 1px black;
+        }
+
+        #but {
+            border-radius: 50%;
+            color: white;
+            background: black;
+        }
+
+        .card {
+            text-align: center;
+            overflow: hidden;
+            display: flexbox;
+            border-radius: 10px;
+            border: 3px solid;
+            margin: 10px;
+            min-width: 500px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .imagem {
+            text-align: center;
+        }
+
+        .tabela {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            text-align: center;
+        }
+        a {
+            color: white;
+        }
+    </style>
+    <title>Exercício página 90</title>
+</head>
+
+<body>
+    <h1>Tema: African Sunset</h1>
+    <div class="imagem">
+        <img src="https://i.pinimg.com/originals/d6/93/11/d69311d1e5cf662f5153ce8caa2639c1.jpg">
+    </div>
+
+    <h1>Cadastro</h1>
+    <form class='card' action="" method="GET">
+        <input id="inp" type="text" name="txtNome" maxlength="60" placeholder="Nome"><br>
+        <input id="inp" type="text" name="txtEndereco" maxlength="100" placeholder="Endereço"><br>
+        <label>Cidade: </label>
+        <select id="inp">
+            <option value="jampa">João Pessoa</option>
+            <option value="jampa">Recife</option>
+            <option value="jampa">Campina Grande</option>
+            <option value="jampa">Natal</option>
+            <option value="jampa">Patos</option>
+            <option value="jampa">Cajazeiras</option>
+        </select><br>
+        <input id="inp" type="tel" name="txtNome" maxlength="60" placeholder="Telefone"><br>
+        <label>Observações: </label><br>
+        <textarea name="Observacoes" id="obs" cols="30" rows="10"></textarea><br>
+        <input id="but" type="submit" value="Enviar">
+        <input id="but" type="reset" value="Limpar">
+    </form>
+
+    <h1>Login de usuário</h1>
+    <form class="card" action="" method="POST">
+
+        <input type="text" maxlength="20" placeholder="Usuário"><br>
+        <input type="password" minlength="6" maxlength="8" placeholder="Senha"><br>
+        <input id="but" type="submit" value="Acessar">
+    </form>
+
+    <h1>Componentes PC:</h1>
+    <form class="card">
+        <input type="checkbox" name="CPU">CPU
+        <input type="checkbox" name="RAM">RAM
+        <input type="checkbox" name="VGA">VGA
+        <input type="checkbox" name="FONTE">FONTE
+        <input type="checkbox" name="COOLER">COOLER
+        <input type="checkbox" name="HD">HD
+        <input id='but' type='submit' value="Enviar">
+    </form>
+
+    <h1>Está gostando do formulário?</h1>
+    <form class='card'>
+        <input type="radio" value="sim">SIM
+        <input type="radio" value="nao">NÃO<br>
+        <input id="but" type="submit" value="Confirmar">
+    </form>
+
+    <h1>Tabela exercicios</h1>
+    <table border="1" class="tabela">
+
+        <tr>
+            <th>Imagem</th>
+            <th>Cadastro</th>
+            <th>Select</th>
+            <th>Login</th>
+            <th>Checkbox</th>
+            <th>Radio</th>
+            <th>Tabela</th>
+            <th>Link</th>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+            <td>X</td>
+        </tr>
+    </table>
+
+    <p>Para mais informações: <a href="google.com">Clique aqui</a></p>
+
+</body>
+
+</html>
