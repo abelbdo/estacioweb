@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios Básicos</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Lista de Exercícios - Básico</h1>
+    <script>
+        //1) declarando variável com valor 10 e exibindo o valor em tela com o método alert
+        var dezena = 10
+        alert(dezena)
+        
+        /*2) Criando 3 variaveis (string, number e boolean)  sem atribuir valor
+        depois atribuir valor e mostrar no console do navegador*/
+        var boo
+        var num
+        var strg
+
+        boo = true
+        num = 2
+        strg = "2"
+
+        console.log(boo, num, strg)
+    
+
+        //3) Calcular o resto da divisão de 99 por 4 usando function e exibir no console
+        function resto(a, b) {
+            return a % b
+        }
+        console.log(resto(99, 4))
+
+        //4) Criar uma variável int e usar condicional para verificar se é menor que 15 ou maior que 100
+        
+            let intNum = 30
+            if (intNum < 15) {
+                console.log(`${intNum} é menor que 15`)
+            } else if (intNum > 100) {
+                console.log(`${intNum} é maior que 100`)
+            } else {
+                console.log(`${intNum} não se encontra no intervalo definido`)
+            }
+        
+       
+
+        //5) criar variavel com ponto flutuante e verificar a condição usando operador ternário
+    
+            let floatNum = 2.93
+          decisao = floatNum <= 5.99 && floatNum >= 1.99 ? "Está dentro do intervalo" : "Está fora"
+          console.log(decisao)
+        
+          //6) Comparar os valores das variáveis dos quesitos 4 e 5
+          igualdadeVar = floatNum === intNum ? "São iguais" : "São diferentes"
+          console.log(igualdadeVar)
+
+          /*7) Depende de qual method foi adotado no formulário. 
+          Se foi get, usasse $_GET["nomedocampo"], se for post, usasse $_POST["nomedocampo"]*/
+
+        
+
+    </script>
+</body>
+
+</html>
