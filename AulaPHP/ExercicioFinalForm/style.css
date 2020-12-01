@@ -1,0 +1,60 @@
+/*reset*/
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Roboto;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;    
+    padding-bottom: 10px;
+    color: #fff;
+    background-color:#000;
+    display: flexbox;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+body{
+    text-align: center;
+    background-color: #fff;
+    display: flexbox;
+}
+
+#box1 {
+    border: solid 1px black;
+    background-color: #000;
+    margin: auto;
+    width: 350px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#inputs {
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+#inputs:focus{
+    background-color: lime;
+}
+
+#buttons {
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 75px;
+    padding: 6px;
+    cursor: pointer;
+    background-color: white;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+ }
